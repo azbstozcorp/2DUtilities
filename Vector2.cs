@@ -35,7 +35,7 @@ class Vector2 {
     }
 
     public static bool operator ==(Vector2 va, Vector2 vb) =>
-        (object)va != null && (object)vb != null &&
+        va is object && vb is object &&
         va.x == vb.x &&
         va.y == vb.y;
 
